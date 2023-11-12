@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:pages="clr-namespace:AnaOkulu.pages"
+            x:Class="AnaOkulu.pages.TabbedPage1"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor = "#212A3E"
+            UnselectedTabColor="#F6F1F1"
+            SelectedTabColor="#F6F1F1">
+
+
+
+    <!--Pages can be added as references or inline-->
+
+    <pages:HomePage Title="Ana Sayfa" IconImageSource="home.png"/>
+    <pages:SettingsPage Title="Ayarlar" IconImageSource="settings.png"/>
+
+</TabbedPage>

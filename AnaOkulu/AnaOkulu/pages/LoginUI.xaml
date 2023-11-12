@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnaOkulu.pages.LoginUI"
+             BackgroundColor="#394867">
+
+    <ContentPage.Content>
+
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="36">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Ana Okulu" TextColor="#94B423"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+                
+            <Image Source="logo.png" WidthRequest="180" HeightRequest="180"></Image>
+
+            <Entry x:Name="txtUsername" Placeholder="Kullanıcı Adı" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Şifre" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Button
+                VerticalOptions="Center"
+                Text="Giriş"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                BorderColor="#94B423"                
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="Button_Clicked"
+                Margin="10"
+            ></Button>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Hesabınız yok mu? " TextColor="Gray"/>
+                        <Span Text="Kayıt Ol" TextColor="Gray" FontAttributes="Bold" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnaOkulu.pages.RegisterPage"
+             BackgroundColor="#394867">
+
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="36">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Kayıt Ol" TextColor="#94B423"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Entry Placeholder="Kullanıcı Adı" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="İsim" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Soyisim" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Şifre" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Şifre yeniden giriniz" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="E-mail" TextColor="White" PlaceholderColor="Gray"></Entry>
+            
+            <Button
+                VerticalOptions="Center"
+                Text="Kayıt Ol"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                BorderColor="#94B423"                
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="Button_Clicked"
+                Margin="10"
+            ></Button>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Zaten Hesabınız var mı? " TextColor="Gray"/>
+                        <Span Text="Giriş Yap" TextColor="Gray" FontAttributes="Bold" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespcae:H"
+             x:Class="AnaOkulu.pages.HomePage"
+             BackgroundColor="#394867"
+             Title="{Binding Title}">
+
+
+
+    <ContentPage.Content>
+        <ScrollView HeightRequest="8000">
+            <StackLayout>
+                
+                <StackLayout>
+                    <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="36">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Ana Okulu" TextColor="#94B423"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <StackLayout VerticalOptions="StartAndExpand" HeightRequest="250">
+                        <CarouselView Margin="0,10,0,0" IsBounceEnabled="True" ItemsSource="{Binding ImageCollection}"
+                              IndicatorView="indicatorView">
+                            <CarouselView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid HorizontalOptions="FillAndExpand">
+                                        <Image Source="{Binding _Image}"
+                                       Aspect="AspectFill"
+                                       HorizontalOptions="FillAndExpand"/>
+                                    </Grid>
+                                </DataTemplate>
+
+                            </CarouselView.ItemTemplate>
+                        </CarouselView>
+                        <IndicatorView Grid.Row="1" Margin="0,0,0,20" VerticalOptions="CenterAndExpand" x:Name="indicatorView"
+                               IndicatorColor="Gray" SelectedIndicatorColor="#a32e9a"
+                               HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <StackLayout>
+                        <Label TextColor="#94B423" FontAttributes="bold" FontSize="24" Text="Hakkımızda"/>
+                        <Label TextColor="#F6F1F1" Text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum dolores, laborum enim suscipit possimus fugiat architecto optio harum sint eligendi, tenetur illum corrupti perferendis sed distinctio delectus quaerat sunt?"/>
+                        <Label TextColor="#F6F1F1" Text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum dolores, laborum enim suscipit possimus fugiat architecto optio harum sint eligendi, tenetur illum corrupti perferendis sed distinctio delectus quaerat sunt?"/>
+                        <Label TextColor="#F6F1F1" Text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab quos a quaerat. Optio, cumque?"/>
+                        <Label TextColor="#F6F1F1" Text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nam, doloremque voluptatibus, optio libero aliquid consequuntur molestiae ea earum ullam, vitae omnis quod porro non."/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label Margin="0,20,0,-20" Text="Türkiye Genelinde 20'den Fazla Okul" FontSize="24" FontAttributes="bold" TextColor="#94B423"/>
+                        <Image Source="map1.png"/>
+                        <Button
+                            VerticalOptions="Center"
+                            Text="Okullarımız"
+                            TextColor="#F6F1F1"
+                            BackgroundColor="#94B423"
+                            BorderColor="#F6F1F1"                
+                            BorderWidth="1"
+                            CornerRadius="20"
+                            Margin="100,0"
+                        ></Button>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Padding="20" Margin="0,20,0,-20" TextColor="#94B423" FontAttributes="bold" FontSize="24" Text="Kurumsal"/>
+                        <Image Source="people.png" />
+                        <Label TextColor="#F6F1F1" Text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nam, doloremque voluptatibus, optio libero aliquid consequuntur molestiae ea earum ullam, vitae omnis quod porro non."/>
+                        <Label TextColor="#F6F1F1" Text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nam, doloremque voluptatibus, optio libero aliquid consequuntur molestiae ea earum ullam, vitae omnis quod porro non."/>
+                    </StackLayout>
+                    <StackLayout Margin="20,0,0,100">
+                        <Label Margin="0,30,0,10" TextColor="#94B423" FontAttributes="bold" FontSize="24" Text="Bize Ulaşın"/>
+                        <Label TextColor="#F6F1F1" Text="laborum enim suscipit possimus fugiat"/>
+                        <Label TextColor="#F6F1F1" Text="Consequuntur ab quos a quaerat."/>
+                        <Label TextColor="#F6F1F1" Text="Kayseri/ TÜRKİYE"/>
+                        <Label TextColor="#F97B22" Margin="10,10,0,0" FontSize="30" Text="0216 000 00 00"/>
+                        <Label TextColor="#F6F1F1" Margin="10,0,0,0" FontSize="20" Text="info@exampleadress.com.tr"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

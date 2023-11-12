@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnaOkulu.pages.SettingsPage"
+             BackgroundColor="#394867">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Button
+                VerticalOptions="Center"
+                Text="Hesabım"
+                TextColor="#F6F1F1"
+                BackgroundColor="#212A3E"
+                BorderColor="#F6F1F1"                
+                BorderWidth="1.5"
+                CornerRadius="10"
+                Margin="10"
+            ></Button>
+            <Button
+                VerticalOptions="Center"
+                Text="Ayarlar"
+                TextColor="#F6F1F1"
+                BackgroundColor="#212A3E"
+                BorderColor="#F6F1F1"                
+                BorderWidth="1.5"
+                CornerRadius="10"
+                Margin="10"
+            ></Button>
+            <Button
+                VerticalOptions="Center"
+                Text="İletişim"
+                TextColor="#F6F1F1"
+                BackgroundColor="#212A3E"
+                BorderColor="#F6F1F1"                
+                BorderWidth="1.5"
+                CornerRadius="10"
+                Margin="10"
+            ></Button>            
+            <Button
+                VerticalOptions="Center"
+                Text="Çıkış Yap"
+                TextColor="#F6F1F1"
+                BackgroundColor="#212A3E"
+                BorderColor="#F6F1F1"                
+                BorderWidth="1.5"
+                CornerRadius="10"
+                Clicked="Button_Clicked"
+                Margin="100, 70"
+                WidthRequest="20"
+                HeightRequest="50"
+            ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
