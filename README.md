@@ -6,7 +6,7 @@
   - The application has login, registration, home, and settings screens. Page transitions were made with a tabbed page.
   - No database connection was made, but 1 user was added manually for testing purposes.
   - username: **admin** // password: **12345**
-  - 
+    
 ### Home and Settings Screens
   - There is feedback at the end of the registration process, but no data is transferred anywhere.
   - There is a slider on the home screen and the buttons are non-functional.
