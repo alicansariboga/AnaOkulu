@@ -1,4 +1,4 @@
-# Ana Okulu Application
+# Example Kindergarten Application
   - The application was created with Xamarin.
 
 ### Sign-In and Sign-Up
